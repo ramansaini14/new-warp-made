@@ -1,6 +1,16 @@
 # Warp Task Manager 🚀
 
+[![CI/CD Pipeline](https://github.com/ramansaini14/new-warp-made/actions/workflows/ci.yml/badge.svg)](https://github.com/ramansaini14/new-warp-made/actions/workflows/ci.yml)
+[![Security Scan](https://github.com/ramansaini14/new-warp-made/actions/workflows/security.yml/badge.svg)](https://github.com/ramansaini14/new-warp-made/actions/workflows/security.yml)
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=new-warp-made)](https://new-warp-made.vercel.app)
+[![TypeScript](https://badgen.net/badge/icon/TypeScript?icon=typescript&label)](https://typescriptlang.org)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A modern, lightweight task management application built with Next.js 15, TypeScript, and Tailwind CSS. Features a beautiful dark/light mode toggle, priority-based task organization, and persistent local storage.
+
+🌟 **[Live Demo](https://new-warp-made.vercel.app)** 🌟
 
 ## ✨ Features
 
@@ -86,14 +96,44 @@ src/
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 - **Accessibility**: Proper ARIA labels and keyboard navigation
 
-## 🚢 Deployment
+## 🚢 Deployment & CI/CD
 
-This app is optimized for deployment on Vercel:
+### Automated Deployment
+This app features a complete CI/CD pipeline with:
 
+#### 🔄 GitHub Actions Workflows
+- **CI/CD Pipeline**: Runs on every push and PR
+  - Code quality checks (ESLint, TypeScript)
+  - Security audits
+  - Automated builds
+  - Production deployment to Vercel
+  - Performance monitoring with Lighthouse
+  
+- **Security & Dependencies**: Daily scheduled scans
+  - CodeQL security analysis
+  - Dependency vulnerability checks
+  - Automated dependency updates via Dependabot
+
+#### 🚀 Deployment Process
+1. **Push to `main`** → Automatic production deployment
+2. **Create PR** → Automatic preview deployment
+3. **Merge PR** → Production update with performance testing
+
+#### Manual Deployment
 ```bash
+# Deploy to production
+vercel --prod
+
+# Or build and deploy
 npm run build
 vercel --prod
 ```
+
+### 📊 Monitoring & Quality
+- **Performance**: Lighthouse CI runs on every deployment
+- **Security**: Daily CodeQL and dependency scans
+- **Dependencies**: Automated updates via Dependabot
+- **Code Quality**: ESLint and TypeScript checks on every commit
 
 ## 🤝 Contributing
 
