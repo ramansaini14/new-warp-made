@@ -39,7 +39,7 @@ jobs:
         
       - name: 📊 Upload coverage to Codecov (if tests exist)
         if: success()
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           fail_ci_if_error: false
 
