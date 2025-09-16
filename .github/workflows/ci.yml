@@ -17,7 +17,7 @@ jobs:
     
     steps:
       - name: 📥 Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: 📦 Setup Node.js
         uses: actions/setup-node@v4
@@ -51,7 +51,7 @@ jobs:
     
     steps:
       - name: 📥 Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: 📦 Setup Node.js
         uses: actions/setup-node@v4
@@ -82,7 +82,7 @@ jobs:
     
     steps:
       - name: 📥 Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: 📦 Setup Node.js
         uses: actions/setup-node@v4
@@ -117,7 +117,7 @@ jobs:
     
     steps:
       - name: 📥 Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: 🚀 Deploy to Vercel
         uses: amondnet/vercel-action@v25
@@ -136,7 +136,7 @@ jobs:
     
     steps:
       - name: 📥 Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: 🔍 Deploy Preview to Vercel
         uses: amondnet/vercel-action@v25
@@ -154,7 +154,7 @@ jobs:
     
     steps:
       - name: 📥 Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: ⚡ Run Lighthouse CI
         uses: treosh/lighthouse-ci-action@v10
