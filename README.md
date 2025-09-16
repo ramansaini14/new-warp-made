@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Warp Task Manager 🚀
 
-## Getting Started
+A modern, lightweight task management application built with Next.js 15, TypeScript, and Tailwind CSS. Features a beautiful dark/light mode toggle, priority-based task organization, and persistent local storage.
 
-First, run the development server:
+## ✨ Features
 
+- **Modern UI**: Beautiful gradient backgrounds and smooth animations
+- **Dark/Light Mode**: Toggle between themes with system preference detection
+- **Task Priorities**: Organize tasks with high, medium, and low priorities
+- **Task Filtering**: Filter tasks by all, active, or completed status
+- **Persistent Storage**: Tasks are saved in localStorage
+- **Responsive Design**: Works perfectly on desktop and mobile
+- **Statistics**: View task completion statistics
+- **TypeScript**: Fully typed for better development experience
+
+## 🛠️ Tech Stack
+
+- **Next.js 15** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **React Hooks** for state management
+- **Local Storage** for data persistence
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd new-warp-made
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Add Tasks**: Type in the input field, select priority, and click "Add Task"
+2. **Toggle Completion**: Click the circle button next to any task
+3. **Delete Tasks**: Click the trash icon to remove tasks
+4. **Filter Tasks**: Use the filter buttons to view all, active, or completed tasks
+5. **Dark Mode**: Click the theme toggle in the header
 
-## Learn More
+## 🎯 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles and animations
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Home page
+├── components/
+│   ├── Header.tsx       # Navigation with theme toggle
+│   └── TaskManager.tsx  # Main task management logic
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Key Features Implemented
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Gradient Backgrounds**: Beautiful blue-to-indigo gradients
+- **Smooth Animations**: Custom fade-in animations for better UX
+- **Priority System**: Color-coded task priorities with emoji indicators
+- **Statistics Dashboard**: Real-time task completion metrics
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Accessibility**: Proper ARIA labels and keyboard navigation
 
-## Deploy on Vercel
+## 🚢 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This app is optimized for deployment on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+vercel --prod
+```
+
+## 🤝 Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Built with ❤️ using Next.js and Tailwind CSS
